@@ -206,9 +206,8 @@ wordLogic(nextWord());
 next.addEventListener("click", function() {
   let tap = new Audio("touch.mp3");
   tap.play();
-  tap.ended = () => {
     wordLogic(nextWord());
-  }
+  
 })
 
 
