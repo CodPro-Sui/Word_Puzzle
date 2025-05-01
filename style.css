@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Caveat:wght@400..700&family=Comic+Relief:wght@400;700&family=Creepster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Titan+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comic Relief", system-ui;
+
+}
+
+.aboutMe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  
+}
+
+.headerName {
+  font-family: "Creepster", system-ui;
+  color: #E9E9EB;
+  text-align: center;
+  letter-spacing: .6px;
+  justify-content: center;
+  
+}
+
+#identity {
+  color: red;
+}
+
+#identity span {
+  font-weight: 300;
+  font-size: 1.4em;
+}
+
+.info {
+  background: linear-gradient(90deg, #1E283F82, #89222242);
+  color: #FFFFFF;
+  width: 200px;
+  position: absolute;
+  border: .5px solid white;
+  top: 6%;
+  right: 13px;
+  height: 200px;
+  padding: 0 13px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  box-shadow: 0 6px 25px #7A45458A;
+  z-index: 999;
+  transition: all 0.5s ease;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.getInfo {
+  z-index: 5;
+  width: 50px;
+  height: 50px;
+  background: blue;
+}
+
+.image{
+  width: 70px;
+  height: 100px;
+  border-radius: 5px;
+  
+  position: relative;
+  border: .2px dashed #0DBA83;
+}
+.image img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 5px;
+  object-fit: contain;
+}
+.bio{
+  font-family: "Caveat", cursive;
+  letter-spacing: .3px;
+  font-size: .45em;
+  padding: 10px 0;
+}
+.close{
+  text-align: right;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
+  height: 100dvh;
+  background: linear-gradient(45deg, #130C21, #0B221A);
+}
+
+.scores {
+  display: flex;
+  justify-content: space-around;
+}
+
+#CScore,
+#HScore {
+  font-size: 2em;
+  letter-spacing: .6px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #DA056D;
+  border: .1px solid #DA056D;
+  color: #E3E1E4;
+  box-shadow: inset 0 0 18px #FFEBF5,
+    2px 6px 19px #D44189BF;
+  border-radius: 51% 49% 52% 48% / 67% 71% 29% 33%;
+}
+
+span {
+  font-size: 1.05em;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  padding: 5px 0;
+  color: #E3E1E4;
+}
+
+.letters {
+  padding: 0 15px;
+
+}
+
+#fixLetters,
+#fillLetters {
+  display: flex;
+  padding: 3px 0;
+  flex-wrap: wrap;
+  min-height: 65px;
+}
+
+.handle {
+  display: flex;
+  justify-content: space-around;
+}
+
+.handle button {
+  padding: 8px 30px;
+  border-radius: 5px;
+  border: 1px solid #99919B;
+  background: #A66CB169;
+  color: white;
+  letter-spacing: .54px;
+  font-size: 1em;
+  box-shadow: 0 6px 15px #732E7354;
+  transition: 0.3s all ease;
+  
+}
+
+.handle button:hover {
+  box-shadow: 0 6px 15px #B117B1;
+  border: 1px solid #B117B1;
+  transform: scale(.98);
+  background: #DFD4E1;
+  color: #B117B1;
+  letter-spacing: 0.33;
+}
+
+.letter {
+  display: flex;
+  margin: 3.5px;
+  width: 50px;
+  height: 50px;
+  font-size: 1.2em;
+  font-smooth: smooth;
+  font-weight: 900;
+  border-radius: 34% 66% 32% 68% / 55% 25% 75% 45%;
+  justify-content: center;
+  align-items: center;
+  background: #71817E;
+  border: 1px solid #F5F5F5;
+  color: #D9D9FC;
+  box-shadow: inset 0 0 19px #E2E2E2, 0 5px 9px #C7C7C8;
+  
+  
+}
+
+.correct {
+  display: flex;
+  margin: 3.5px;
+  width: 50px;
+  height: 50px;
+  font-size: 1.2em;
+  font-smooth: smooth;
+  font-weight: 900;
+  border-radius: 34% 66% 32% 68% / 55% 25% 75% 45%;
+  justify-content: center;
+  align-items: center;
+  background: #15301B;
+  border: 1px solid #60F37E;
+  color: #3EEB61;
+  box-shadow: inset 0 0 19px #4BDF6A, 0 5px 9px #299B40
+}
+
+.error {
+  display: flex;
+  margin: 3.5px;
+  width: 50px;
+  height: 50px;
+  font-size: 1.2em;
+  font-smooth: smooth;
+  font-weight: 900;
+  border-radius: 34% 66% 32% 68% / 55% 25% 75% 45%;
+  justify-content: center;
+  align-items: center;
+  background: #301516;
+  border: 1px solid #F36060;
+  color: #EB3E3E;
+  box-shadow: inset 0 0 19px #DF4B4B, 0 5px 9px #9B2929
+}
+
+.filling {
+  background: #65571E;
+  border: 1px solid #F0D04A;
+  color: #FFDD4D;
+  box-shadow: inset 0 0 19px #DABB3A,
+    0 5px 9px #887219
+}
